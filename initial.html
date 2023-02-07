@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>HW_Materialize_maket_Holovina</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <img src="assets/Paper-Boats-at-the-Beach.jfif" alt="" />
+      <div class="button">
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+          <i class="material-icons black white-text">menu</i>
+        </a>
+      </div>
+	  
+
+      <div class="nav">
+        <ul id="slide-out" class="sidenav background black">
+          <li>
+            <div class="user-view flex">
+              <div class="background black"></div>
+              <img class="circle flex" src="assets/avatar.jpg" />
+              <a href="#name"><p class="white-text name">Lady Bird</p></a>
+            </div>
+          </li>
+
+          <div class="social flex">
+            <img src="assets/lg_twit.png" alt="" width="15px" />
+            <img src="assets/in.png" alt="" />
+            <img src="assets/pngwing.com.png" alt="" />
+            <img src="assets/boog.com.png" alt="" />
+          </div>
+
+          <li><div class="divider"></div></li>
+
+          <div class="links">
+            <li>
+              <a class="waves-effect white-text" href="#"
+                ><i class="material-icons white-text">home</i>Home</a>
+            </li>
+            <li>
+              <a class="waves-effect blue-text accent-4" href="#"><i class="material-icons blue-text">last_page</i>Blog</a>
+            </li>
+            <li>
+              <a class="waves-effect orange-text" href="#"><i class="material-icons orange-text">archive</i>Archive</a>
+            </li>
+            <li>
+              <a class="waves-effect pink-text" href="#"><i class="material-icons pink-text">library_books</i>Progects</a>
+            </li>
+            <li>
+              <a class="waves-effect yellow-text" href="#"><i class="material-icons yellow-text">home</i>About</a
+              >
+            </li>
+            <li>
+              <a class="waves-effect blue-text " href="#"><i class="material-icons blue-text">send</i>Contact</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
